@@ -447,10 +447,10 @@
   transition: all 0.4s ease-in-out;
 }
 .ih-item.circle.effect4.colored .info {
-  background: #1a4a72;
+  background: #26a69a;
 }
 .ih-item.circle.effect4 .info {
-  background: #333333;
+  background: #26a69a;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -2770,12 +2770,12 @@
   position: relative;
 }
 .ih-item.square.effect4.colored .info {
-  background: rgba(12, 34, 52, 0.6);
+  background: rgba(38,166,154,0.6);
 }
 .ih-item.square.effect4.colored .mask1,
 .ih-item.square.effect4.colored .mask2 {
-  background: #1a4a72;
-  background: rgba(26, 74, 114, 0.6);
+  background: #26a69a;
+  background: rgba(38,166,154,0.6);
 }
 .ih-item.square.effect4 .img {
   -webkit-transition: all 0.35s ease-in-out;
