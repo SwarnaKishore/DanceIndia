@@ -8,31 +8,35 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" href="images/favicon (8).ico" type="image/x-icon">
-<link rel="icon" href="images/favicon (8).ico" type="image/x-icon">
+  
 
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/ihover.css">
+		<link rel="stylesheet" type="text/css" href="css/effect.css">
 </head>
 <body>
-<div id="navbar" class="navbar-fixed scrollspy">
+<div id="home" class="navbar-fixed scrollspy">
   <nav  class="white">
     <div class="nav-wrapper container">
-    	<div class="container"> <a href="#navbar" class="brand-logo">Portfolio</a></div>
+    	<div class="container"> <a href="#home" class="brand-logo">Portfolio</a></div>
      
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
       <ul class="right hide-on-med-and-down">
        
         <li><a class="head-link" href="#work">Recent works</a></li>
-         <li><a class="head-link" href="#blogs">Blogs</a></li>
+         <li><a class="head-link" href="#meteor">Meteor sites</a></li>
+        <li><a class="head-link" href="#blogs">Blogs</a></li>
+        
         <li><a class="head-link" href="#portfolio">Other works</a></li>
        
       </ul>
       <ul class="right side-nav" id="mobile-demo">
       	 <li><a class="head-link" href="#work">Recent works</a></li>
-         <li><a class="head-link" href="#blogs">Blogs</a></li>
+         <li><a class="head-link" href="#meteor">Meteor sites</a></li>
+        <li><a class="head-link" href="#blogs">Blogs</a></li>
+        
         <li><a class="head-link" href="#portfolio">Other works</a></li>
-      </ul>
+              </ul>
     </div>
   </nav>
   </div>
@@ -41,7 +45,7 @@
     <div class="section no-pad-bot">
       <div class="container valign">
         <br><br>
-        <h1 class="header center white-text">Swarna Kishore</h1>
+        <h1 class="header center white-text">Swarna Avvaru</h1>
         <div class="row center">
           <h5 class="header col s12 light white-text">web developer</h5>
         </div>
@@ -68,7 +72,7 @@
 	<h2 class="center">Recent work</h2>
 	<div class="row">
 		
-		<div class="col s12 m12 l4">
+		<div class="col s12 m6 l6">
 			   <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="images/MaterialThemes.png">
@@ -88,7 +92,7 @@ which is based on Material Design</p>
      
             
             
-            	<div class="col s12 m12 l4">
+            	<div class="col s12 m6 l6">
 			   <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="images/bootstrap.png">
@@ -107,22 +111,7 @@ which is based on Material Design</p>
      
      
      
-     	<div class="col s12 m12 l4">
-			<div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="images/TechTrendz.png">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Tech Trendz<i class="mdi-navigation-more-vert right"></i></span>
-          <p><a href="http://techtrendz.meteor.com/" target="_blank">View website</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Tech Trendz<i class="mdi-navigation-close right"></i></span>
-          <p>The best new web development stuff every day</p>
-<a href="http://techtrendz.meteor.com/" target="_blank" style="color: white;" class="waves-effect waves-light btn">View website&nbsp;<i class="fa fa-eye"></i></a>
-        </div>
-      </div>
-     </div><!--col-->
+     	
      
             
             
@@ -131,16 +120,47 @@ which is based on Material Design</p>
 </div><!--container-->
 
 
-
-
-
-
-
-<div class="container" id="blogs">
+<div class="container" id="meteor">
 	<br>
+	<br>
+	<br>
+	<h3 class="center">Meteor sites</h3>
+	<div class="content"><div class="grid2">
+					<a href="http://tutorialhunt.meteor.com/" target="_blank">
+					<figure class="effect-sarah">
+						<img src="images/TutorialHunt.png" alt="img13"/>
+						<figcaption>
+							<h2>Tutorial Hunt</h2>
+							<p>View and share the best and free tutorials at one place</p>
+							
+						</figcaption>			
+					</figure>
+					</a>
+					<a href="http://techtrendz.meteor.com/" target="_blank">
+					<figure class="effect-sarah">
+						<img src="images/TechTrendz.png" alt="img20"/>
+						<figcaption>
+							<h2>Tech Trendz</h2>
+							<p>The best new web development stuff every day</p>
+						
+						</figcaption>			
+					</figure>
+					</a>
+				</div>
+
+		
+	</div>
+</div>
+
+<br>
+  	<br>
+  	<br><br>
   	<br>
   	<br>
-	<h3 class="center">My blogs</h3>
+
+<div class="container" id="blogs" style="position: relative;top: 50px;">
+	
+	<p style="text-align: center;font-size: 50px;">My blogs</p>
 	<div class="row">
 		<ul class="grid cs-style-4" style="margin: 10px;">
 		<div class="col s12 m8 l6">
@@ -246,7 +266,7 @@ which is based on Material Design</p>
                  </div></a></div>
     </div>
      <div class="col s12 m8 l4">
-    <div class="ih-item square colored effect4"><a href="https://github.com/SwarnaKishore/MusicRobot" target="_blank">
+    <div class="ih-item square colored effect4"><a href="http://swarnakishore.github.io/MusicRobot/" target="_blank">
         <div class="img"><img src="images/MusicRobot.png" alt="img"></div>
         <div class="mask1"></div>
         <div class="mask2"></div>
@@ -258,6 +278,7 @@ which is based on Material Design</p>
    
    
 </div><!--container-->
+
 
 
 
@@ -289,18 +310,15 @@ which is based on Material Design</p>
       
   });
   </script>
-  <script>
+<script>
   	    $('.head-link').click(function(e) {
         e.preventDefault();
         
         var goto = $(this).attr('href');
-
         $('html, body').animate({
             scrollTop: $(goto).offset().top
         }, 800);
     });
-
   </script>
-
   </body>
 </html>
