@@ -254,6 +254,33 @@ nav li a {
 }
 
 
+.card.horizontal .card-image img {
+    width: 210px;
+    height: 270px;
+    /* max-width: 100%; */
+    /* width: auto; */
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating)
+{
+ color : #ee6e73; 
+}
+
+#description1
+{
+  font-family: 'Acme', sans-serif;
+  font-size: medium;
+}
+#description2
+{
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+
+}
+#description3
+{
+  font-family: 'Ubuntu', sans-serif;
+}
 
 
 
