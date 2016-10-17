@@ -254,7 +254,7 @@ nav li a {
 }
 
 
-.card.horizontal .card-image img {
+#tutsImage {
     width: 210px;
     height: 270px;
     /* max-width: 100%; */
@@ -266,18 +266,18 @@ nav li a {
  color : #ee6e73; 
 }
 
-#description1
+.description1
 {
   font-family: 'Acme', sans-serif;
   font-size: medium;
 }
-#description2
+.description2
 {
    font-family: 'Poiret One', cursive;
   font-size: 20px;
 
 }
-#description3
+.description3
 {
   font-family: 'Ubuntu', sans-serif;
 }
