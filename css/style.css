@@ -285,6 +285,30 @@ nav li a {
 
 
 
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating)
+{
+ color : #ee6e73; 
+}
+.card-links{
+ 
+
+  background-color: inherit;
+  border-top: 1px solid rgba(160,160,160,0.2);
+    padding: 20px;
+}
+
+.card-links a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: #ffab40;
+  margin-right: 20px;
+  transition: color .3s ease;
+  text-transform: uppercase;
+}
+
+.card-links a:not(.btn):not(.btn-large):not(.btn-floating):hover {
+  color: #ffd8a6;
+}
+
+
 
 
 
