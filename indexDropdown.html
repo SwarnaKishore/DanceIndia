@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dance India</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/jkmegamenu.css" />
+
+
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+<link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+<script src="http://code.jquery.com/jquery-git2.js"></script>
+
+<link href="css/index.css" rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Joti+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+  
+  <link href='http://fonts.googleapis.com/css?family=Joti+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Sniglet' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <script>
+  	/*
+* 
+* Credits to http://css-tricks.com/long-dropdowns-solution/
+*
+*/
+
+var maxHeight = 400;
+
+$(function(){
+
+    $(".nav > li").hover(function() {
+    
+         var $container = $(this),
+             $list = $container.find("ul"),
+             $anchor = $container.find("a"),
+             height = $list.height() * 1.1,       // make sure there is enough room at the bottom
+             multiplier = height / maxHeight;     // needs to move faster if list is taller
+        
+        // need to save height here so it can revert on mouseout            
+        $container.data("origHeight", $container.height());
+        
+        // so it can retain it's rollover color all the while the dropdown is open
+        $anchor.addClass("hover");
+        
+        // make sure dropdown appears directly below parent list item    
+        $list
+            .show()
+            .css({
+                paddingTop: $container.data("origHeight")
+            });
+        
+        // don't do any animation if list shorter than max
+        if (multiplier > 1) {
+            $container
+                .css({
+                    height: maxHeight,
+                    overflow: "hidden"
+                })
+                .mousemove(function(e) {
+                    var offset = $container.offset();
+                    var relativeY = ((e.pageY - offset.top) * multiplier) - ($container.data("origHeight") * multiplier);
+                    if (relativeY > $container.data("origHeight")) {
+                        $list.css("top", -relativeY + $container.data("origHeight"));
+                    };
+                });
+        }
+        
+    }, function() {
+    
+        var $el = $(this);
+        
+        // put things back to normal
+        $el
+            .height($(this).data("origHeight"))
+            .find("ul")
+            .css({ top: 0 })
+            .hide()
+            .end()
+            .find("a")
+            .removeClass("hover");
+    
+    });  
+    
+});
+
+
+
+
+  </script>
+</head>
+<body>
+	<div class="container">
+  <div class="Maincontainer">
+ <div class="mainHeader"> 
+      
+	  
+             <h1 id="main1">Dance India</h1>
+			 <h5 id="main2"> Helping dancers staying inspired... </h5>
+  
+         
+   
+   <nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Home</a>
+        </div> <!--navbar-header-->
+        
+        <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
+          
+          <ul class="nav navbar-nav">
+          	
+          	
+          	
+          	
+          	
+          	
+           	
+          	  <li class="dropdown">
+              
+              <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">Folk Dance <b class="caret"></b></a>
+            
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="LearnBharatnatyam1.html">Bharatnatyam</a> </li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="LearnKathak1.html">kathak</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">kathakali</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">kuchipudi</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Manipuri</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mohiniattyam</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Odissi</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sattriya</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="LearnBharatnatyam1.html">Bharatnatyam</a> </li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="LearnKathak1.html">kathak</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">kathakali</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">kuchipudi</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Manipuri</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mohiniattyam</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Odissi</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sattriya</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="LearnBharatnatyam1.html">Bharatnatyam</a> </li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="LearnKathak1.html">kathak</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">kathakali</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">kuchipudi</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Manipuri</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mohiniattyam</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Odissi</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sattriya</a></li>
+                </ul><!--dropdown-menu-->
+                
+                
+                
+            </li><!--dropdown-->
+           
+         
+         
+            
+            <li class="dropdown">
+              
+              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Learn Classical Dance <b class="caret"></b></a>
+             
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="LearnBharatnatyam1.html">Bharatnatyam</a> </li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="LearnKathak1.html">kathak</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">kathakali</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">kuchipudi</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Manipuri</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mohiniattyam</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Odissi</a></li>
+                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sattriya</a></li>
+                </ul><!--dropdown-menu-->
+              
+            </li><!--dropdown--> 
+              
+              
+            
+            
+            
+              
+            
+            <li class="dropdown">
+              <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Teach Dance <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>  
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+              </ul><!--dropdown menu-->
+            </li><!--dropdown-->
+            
+            
+            
+            
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            
+          </ul><!--nav navbar-nav-->
+          
+          
+         
+          
+          
+        
+        
+        
+          
+    </div>    <!--collapse navbar-collapse bs-example-js-navbar-collapse-->
+     </div>   <!--container fluid-->
+  </nav>
+   
+   
+   
+   
+	</div><!--MainHeader-->	
+  <div class="videoContainer">
+    <div class="carousel-header">
+  <p>The 8 classical dance styles of India!</p>
+    </div>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+       <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="4"></li> 
+      <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+       <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+     <div class="item active">
+        <img src="images/bharatnatyam_04.jpg" class="img-rounded img-responsive" alt="Responsive image">  
+           <div class="container">                  
+             <div class="caption row-fluid">
+                    <div class="span4"><h3>BHARATNATYAM</h3>
+            </div>                	
+                	<div class="span8"><p>Bharata Natyam (Tamil: பரதநாட்டியம்) (Telugu: భరత నాట్యం),also spelled Bharatanatyam, is a classical Indian dance form that originated in the temples of Tamil Nadu. This dance form denotes various 19th- and 20th-century reconstructions of Sadir, the art of temple dancers called Devadasis 
+              		</p>   
+                	<a class="btn btn-mini" href="#">&raquo; Read More</a>
+					</div>
+                </div> <!--caption row fliud-->
+     </div><!--container-->
+      </div><!--item active-->
+      <div class="item">
+        <img src="http://mycityimg.sulekha.com/events/retrospect-kathak-dance/thumbnailfull/retrospect-kathak-dance-2012-7-18-1-54-25.jpg" class="img-rounded img-responsive" alt="Responsive image">
+           <div class="caption row-fluid">
+                    <div class="span4"><h3>KATHAK</h3>
+                    </div>                	
+                	<div class="span8"><p>This dance form origin from the groups of poets of ancient northern India, known as Kathaks, or story tellers. These poets, performing in village squares and temple courtyards, mostly specialized in recounting mythological and moral tales from the scriptures. </p>
+                	<a class="btn btn-mini" href="#">&raquo; Read More</a>
+					</div>
+                </div>
+     </div><!--item-->
+      
+      <div class="item">
+        <img src="http://images.jagran.com/inext/Inext_p_lhea__kathakali.jpg" class="img-rounded img-responsive" alt="Responsive image">
+                        
+                    <div class="caption row-fluid">
+                    <div class="span4"><h3>KATHAKALI</h3>
+                    
+                    </div>                	
+                	<div class="span8"><p>Kathakali is one of the oldest theatre forms in the world. It originated in the area of southwestern India now known as the state of Kerala. Kathakali is a group presentation, in which dancers take various roles in performances traditionally based on themes from Hindu mythology.</p>
+                	<a class="btn btn-mini" href="#">&raquo; Read More</a>
+					</div>
+                </div>
+                       
+              
+        
+    </div><!--item-->
+      
+      
+      
+      <div class="item">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSn3XLOEb4IllLsMNmiPJQpaxKVEdvUvmNgoJsYCWJNv3EgLSc12w" class="img-rounded img-responsive" alt="Responsive image">
+                        
+                    <div class="caption row-fluid">
+                      
+                    <div class="span4"><h3>Kuchipudi</h3>
+                    
+                    </div>                	
+                	<div class="span8"><p>Kuchipudi is one of the well-known Classical Indian Dance form from Andhra Pradesh, India. The name Kuchipudi has origin from the name of a village “KUCHELAPURAM” with resident Brahmins practicing this traditional dance form at Andhra pradesh.</p>
+                	<a class="btn btn-mini" href="#">&raquo; Read More</a>
+					</div>
+                          
+                </div>
+                       
+              
+        
+    </div><!--item-->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="item">
+        <img src="http://e-pao.org/galleries/images/Arts/Dance/2013/Chandigarh_Fest_02/02_6/Chandigarh_Fest_20130216_6_4.jpg" class="img-rounded img-responsive" alt="Responsive image">
+                        
+                    <div class="caption row-fluid">
+                    <div class="span4"><h3>MANIPURI</h3>
+                    
+                    </div>                	
+                	<div class="span8"><p>Manipuri is one of the most beautiful dance styles of India. Nurtured in the mountainous region of the northeast, it takes its name from the name of the place Manipur, which is now a state. Manipur literally means a jewel of a land, and the state is set like a gem in the verdant hills. </p>
+                	<a class="btn btn-mini" href="#">&raquo; Read More</a>
+					</div>
+                </div>
+                       
+              
+        
+    </div><!--item-->
+      
+      
+      
+      
+       <div class="item">
+        <img src="http://georgandreassuhr.files.wordpress.com/2012/12/mohiniattyam-sunanda-nair.jpg?w=610" class="img-rounded img-responsive" alt="Responsive image">
+                        
+                    <div class="caption row-fluid">
+                    <div class="span4"><h3>MOHINIATTYAM</h3>
+                    
+                    </div>                	
+                	<div class="span8"><p>The dance form of Mohiniattyam was nurtured in the region of Kerala in southwestern India. The name Mohiniattyam literally means ‘Dance of the Enchantress,’ and it does have a mesmerizing quality.  </p>
+                	<a class="btn btn-mini" href="#">&raquo; Read More</a>
+					</div>
+                </div>
+                       
+              
+        
+    </div><!--item-->
+      
+      
+      
+      
+      
+       
+      <div class="item">
+        <img src="http://colleenashakti.com/news/colleena/uploaded_images/Colleena--Odissi--(4)-798153.jpg" class="img-rounded img-responsive" alt="Responsive image">
+                        
+                    <div class="caption row-fluid">
+                    <div class="span4"><h3>Odissi</h3>
+                    
+                    </div>                	
+                	<div class="span8"><p>Odissi has origininated from ancient northern India. The name Odissi refers to the dance style of the state of Orissa in eastern India. Like other classical arts of India Oddisi also face difficulties to survive and by the 1930s and 40s, there were very few surviving practitioners of the art. </p>
+                	<a class="btn btn-mini" href="#">&raquo; Read More</a>
+					</div>
+                </div>
+                       
+              
+        
+    </div><!--item-->
+      
+      
+      
+      
+      
+      
+      
+       <div class="item">
+        <img src="https://thiraseela.com/Admin/Content/ImageGallery/57/image2.jpg" class="img-rounded img-responsive" alt="Responsive image">
+                        
+                    <div class="caption row-fluid">
+                    <div class="span4"><h3>SATTRIYA</h3>
+                    
+                    </div>                	
+                	<div class="span8"><p>Sattras are the Vaishnava monasteries in Assam. The saint poet Shankar Deva of the 15th century AD started this institution to bring harmony to the region of Assam through religion, creating forms of dance-dramas, music, painting and collective prayer.  </p>
+                	<a class="btn btn-mini" href="#">&raquo; Read More</a>
+					</div>
+                </div>
+                       
+              
+        
+    </div><!--item-->
+      
+      
+      
+     
+      
+      
+      
+      
+   </div><!--carousel-inner-->
+      
+      <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+
+    
+ 
+    </div><!--carousel slide-->
+  
+    </div> <!--video Container-->
+  
+
+
+  <div class="footer">
+    <div class="centeredContent">
+      <p>© 2014 by Dance India </p>
+    </div> <!-- centered content-->
+  </div> <!--footer-->
+    
+    
+  </div> <!--Main container-->
+</div> <!--container-->
+</body>
+</html>

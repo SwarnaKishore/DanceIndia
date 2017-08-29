@@ -1,0 +1,274 @@
+body
+{
+  background-image: url("../images/dance.jpg");
+  width:60%;
+  margin-left:10%;
+}
+
+.mainHeader
+{
+background-color: rgb(159, 0, 62);
+position: absolute;
+top: 1px;
+  left:0px;
+min-width: 1904px;
+min-height: 115px;
+position: absolute;
+border-bottom: 5px solid rgb(205, 9, 0);
+  
+}
+#main1
+{
+
+font-size: 36px;
+color: rgb(254, 212, 0);
+position:absolute;
+left:280px;
+bottom:40px;
+  font-family: 'Trade Winds', cursive;
+
+}
+#main2
+{
+font-size:20px;
+color: rgb(254, 212, 0);
+position:absolute;
+left:280px;
+bottom:14px;
+font-family: 'Joti One', cursive; 
+}
+
+
+
+.navbar-default {
+	background-color: #9f003e;
+	border-color: #9f003e;
+  margin-left: 50%;
+  margin-top:4%;
+}
+.navbar-default .navbar-brand {
+	color: #ffffff;
+  font-family: 'Joti One', cursive;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #fed400;
+}
+.navbar-default .navbar-text {
+	color: #ffffff;
+ 
+}
+.navbar-default .navbar-nav > li > a {
+	color:rgba(255, 255, 255, 0.8);
+   font-family: 'Joti One', cursive;
+  font-size: 18px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #fed400;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #fed400;
+	background-color: #9f003e;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color: #fed400;
+	background-color: #9f003e;
+}
+.navbar-default .navbar-toggle {
+	border-color: #9f003e;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #9f003e;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+	color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+	color: #fed400;
+}
+.navbar-default .navbar-nav .open .dropdown-menu  > li > a
+{
+  background-color:rgba(255,0,255,0.1);
+   font-family: 'Joti One', cursive;
+}
+.navbar-default .navbar-nav .open .dropdown-menu  > li > a:hover
+{
+ background-color: rgb(159, 0, 62); 
+  color:rgb(254, 212, 0);
+}
+
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #ffffff;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #fed400;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+		color: #fed400;
+		background-color: #9f003e;
+	}
+}
+
+
+
+
+/*#navigation
+{
+
+float: left;
+left: 750px;
+top: 50px;
+min-height: 25px;
+position: absolute;
+}
+#navigation ul li
+{
+	list-style-type: none;
+	float: left;
+  position:relative;
+}
+#navigation ul ul
+{
+  display:none;
+}
+
+#navigation ul li:hover > ul
+{
+  display:block;
+  margin:0px;
+  padding:0px;
+}
+
+
+#navigation ul li a
+{
+	display: block;
+	float: left;
+  
+	padding: 10px;
+    text-decoration: none;
+	color: rgba(255, 255, 255, 0.8);
+  font-family: 'Joti One', cursive;
+ 
+ font-size:17px;
+   
+}
+
+#navigation ul li:hover > ul li
+{
+  float:none;
+  display:block;
+}
+
+#navigation ul li:hover > ul li a
+{
+  background-color: rgba(159, 0, 62,1);
+}
+
+
+
+#navigation li a:hover { color: rgb(254, 212, 0); }
+
+*/
+
+
+
+.footer
+{
+position:absolute;
+width: 100%;
+padding:5px;
+top:8890px;  
+left:0px;
+  
+}
+
+
+
+.centeredContent
+{
+  
+background-color: rgb(159, 0, 62) ;
+color:rgb(254, 212, 0);
+ height:50px;
+  
+  padding:5px;
+ 
+}
+
+.centeredContent p
+{
+  position:relative;
+  top:10px;
+  left:10px;
+  text-align:center;
+}
+
+
+.videoContainer
+{
+  
+  margin-left:23%;
+  width:980px;
+    
+  height:8900px;
+  background-color: rgb(159, 0, 62);
+}
+
+
+
+
+  
+.videoContainer h3,p
+{
+  position:relative;
+  color:rgb(254, 212, 0);
+  left:160px;
+  top:150px;
+  font-family: 'Nova Square', cursive;
+  }
+
+.videoContainer iframe
+{
+  position:relative;
+  top:180px;
+  left:160px;
+  border:1px solid rgb(205, 9, 0);
+  padding:5px;
+}
+
+.pager
+{
+  position:absolute;
+  top:8750px;
+  left:860px;
+}
+
+
+
+
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color:#9f003e;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  text-decoration: none;
+  background-color: #9f003e;
+  color:rgb(254, 212, 0)
+}
+
+
+
